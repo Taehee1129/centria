@@ -1,0 +1,71 @@
+/*Setting TimeLine
+Modified from codepen.io 
+Original Code is : https://codepen.io/iqbaltaher/pen/abbXRxb */
+.timeline {
+    counter-reset: year 2019;
+    position: relative;
+    font-weight: bold;
+}
+
+.timeline li {
+    list-style: none;
+    float: left;
+    width: 33.3333%;
+    position: relative;
+    text-align: center;
+}
+
+.timeline li:before {
+    counter-increment: year;
+    content: counter(year);
+    /*change circle size*/
+    width: 70px;
+    /*change circle size*/
+    height: 70px;
+    /*circle border*/
+    border: 5px solid rgb(250, 199, 60);
+    border-radius: 50%;
+    display: block;
+    /*text in circle. vertical location*/
+    text-align: center;
+    line-height: 70px;
+    margin: 0 auto 10px auto;
+    /*two other circle's background color*/
+    background: rgb(250, 199, 60);
+    /*Two other circle's text*/
+    color: black;
+}
+
+.timeline li:after {
+    content: "";
+    position: absolute;
+    /*set more line after the third circle*/
+    width: 100%;
+    /*connecting line's thickness*/
+    height: 5px;
+    /*second connecting line's color*/
+    background-color: rgb(250, 199, 60);
+    /*All connecting line's vertical location*/
+    top: 35px;
+    /*connecting line's location*/
+    left: -50%;
+    /*connecting lines are behind the circles*/
+    z-index: -999;
+    transition: all ease-in-out .3s;
+}
+
+.timeline li:first-child:after {
+    /*no line before first circle*/
+    content: none;
+}
+
+.timeline li.active-tl:before {
+    /*Setting for first circle*/
+    background: rgb(250, 199, 60);
+    color: black;
+}
+
+.timeline li.active-tl+li:after {
+    /*Setting first line*/
+    background: rgb(250, 199, 60);
+}

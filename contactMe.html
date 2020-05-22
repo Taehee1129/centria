@@ -6,73 +6,84 @@
 
     <!--Setting Responsive webpage-->
     <meta id="viewport" name="viewport" content="width=device-width, initial-xcale=1.0" />
-
-    <title>Contact</title>
-    <link rel="stylesheet" href="./style/teiStyleSheet.css" />
+    <title>Contact Me </title>
+    <link rel="stylesheet" href="./style/css/teiStyleSheet.css" />
+    <link rel="stylesheet" href="./style/css/contactForm.css" />
 </head>
 
 <body>
+    <!--This is header-->
     <div class="header">
         <h1>Taehee Lee</h1>
 
     </div>
 
-    <!--Nav starts-->
-    <div class="navBar">
-        <a href="https://taehee1129.github.io/centria/teiHome.html">
-            Home</a>
-        <a href="https://taehee1129.github.io/centria/aboutMe.html">
-            About Me</a>
-        <a href="https://taehee1129.github.io/centria/experience.html">
-            Experience</a>
-        <a href="https://taehee1129.github.io/centria/contactMe.html">
-            Contact me</a>
-
-    </div>
-
-    <!-- Here contents start-->
+    <!--Grid box layout starts.-->
     <div class="row">
-        <div class="side">
-            <h3>Contact me</h3>
+
+        <!--This is navBar-->
+        <div class="container-navBar menu">
+            <ul>
+                <li>
+                    <a class="menuLink" href="https://taehee1129.github.io/centria/teiHome.html">
+                        Home</a>
+                </li>
+                <li>
+                    <a class="menuLink" href="https://taehee1129.github.io/centria/aboutMe.html">
+                        About Me </a>
+                </li>
+                <li>
+                    <a class="menuLink" href="https://taehee1129.github.io/centria/experience.html">
+                        Experience </a>
+                </li>
+                <li>
+                    <a class="menuLink" href="https://taehee1129.github.io/centria/contactMe.html">
+                        Contact Me </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!--This is introduction-->
+        <div class="container-intro">
+
+            <h3>ContactMe</h3>
+
+            <a href="https://www.linkedin.com/in/taehee-lee/" target="_blank">
+                <img class="logoImg" src="style/image/linkedin.png" alt="LinkedInLogo"> </a>
+
 
         </div>
 
-        <div class="main">
+
+        <div class="container-fullLineBoxNoborder" style="text-align: center;">
+
             <form action="/action_page.php">
-                <div class="row">
-
-                    <div class="inputarea">
-                        <label for="info"> What's on your mind?</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name">
-                    </div>
-                    <div class="inputarea">
-                        <input type="text" id="lname" name="lastname" placeholder="Your Email Address">
-                    </div>
-
-
-                    <div class="inputarea">
-                        <label for="message"> Your feedback or question</label>
-                        <textarea id="subject" name="subject" placeholder="Please leave your message"
-                            style="height:200px"></textarea>
-                    </div>
+                <div class="inputarea">
+                    <label for="info"> What's on your mind? Please leave your feedback or question.</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name">
                 </div>
-                <div class="row">
-                    <input type="submit" value="Submit">
+                <div class="inputarea">
+                    <input type="text" id="lname" name="lastname" placeholder="Your Email Address">
                 </div>
+
+
+                <div class="inputarea">
+                    <textarea id="subject" name="subject" placeholder="Please leave your message"
+                        style="height:200px"></textarea>
+                </div>
+
+                <input type="submit" value="Submit">
+
             </form>
-            <br>
-            <br>
-            <a href="https://www.linkedin.com/in/taehee-lee/" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/t19_90/" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/Tei1129/" target="_blank">Facebook</a>
         </div>
-
-
     </div>
+
+    <!--This is footer-->
     <div class="footer">
-        <p>Taehee Lee, 2020<br />
-        </p>
+        <p>Taehee Lee, 2020 </p>
     </div>
+
 
 </body>
 

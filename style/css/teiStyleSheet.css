@@ -1,0 +1,191 @@
+/*Set Universal Style*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Set Grid Box*/
+.row::after {
+  content: "";
+  clear: both;
+  display: grid;
+}
+
+[class*="container-"] {
+  float: left;
+  padding: 15px;
+}
+
+/*navBar Conatiner*/
+.container-navBar {
+  width: 23%;
+}
+
+
+/*main contents containers in different sizes*/
+.container-intro {
+  width: 76%;
+  margin-right: 5px;
+  text-align: justify;
+}
+
+.container-oneThirdBox {
+  width: 32.9%;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  background-color: rgb(250, 199, 60);
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.container-oneThirdBox:hover {
+  opacity: 0.5;
+  -webkit-transform: rotate(1.5deg);
+  -moz-transform: rotate(1.5deg);
+  -ms-transform: rotate(1.5deg);
+  -o-transform: rotate(1.5deg);
+  transform: rotate(1.5deg);
+}
+
+.container-fullLineBox {
+  width: 99%;
+  border: solid 2px rgb(250, 199, 60);
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.container-fullLineBoxNoborder {
+  width: 99%;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.container-halfBox {
+  width: 49.5%;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+
+
+/*header's style setting*/
+.header {
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  height: 160px;
+  text-align: center;
+  line-height: 80px;
+  background-image: linear-gradient(143deg, rgb(206, 236, 182) 25%, rgb(247, 241, 215) 25%, rgb(247, 241, 215) 50%, rgb(206, 236, 182) 50%, rgb(206, 236, 182) 75%, rgb(247, 241, 215) 75%, rgb(247, 241, 215) 100%);
+  color: black;
+  background-size: 66.47px 50.09px;
+}
+
+
+
+
+/*menu Bar's link setting*/
+.menu ul a {
+  display: block;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu li {
+  padding: 12px;
+  margin-bottom: 7px;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(164, 206, 130);
+}
+
+.menu li:hover {
+  background-color: rgb(238, 227, 177);
+}
+
+.menuLink {
+  text-decoration: none;
+  color: rgb(16, 1, 43);
+}
+
+/*Setting images*/
+.mainImage {
+  width: 100%;
+  padding: 15px;
+}
+
+.profileImage {
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+.logoImg {
+  max-width: 100%;
+  margin-top: 10px;
+  height: auto;
+}
+
+figure,
+figcaption {
+  text-align: center;
+}
+
+
+
+
+
+/*footer setting*/
+.footer {
+  font-size: 15px;
+  border: solid white;
+  text-align: center;
+  background-color: rgb(164, 206, 130);
+}
+
+
+/* Responsiveness for Mobile phone */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  [class*="container-"] {
+    width: 100%;
+  }
+
+
+  .container-halfBox {
+    margin-bottom: 5px;
+  }
+}
+
+
+/* Responsiveness for narrow screen */
+@media only screen and (max-width: 1000px) {
+  [class*="container-"] {
+    width: 100%;
+  }
+
+  .container-halfBox {
+    margin-bottom: 5px;
+  }
+}
