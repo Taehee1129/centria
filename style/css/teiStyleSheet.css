@@ -128,6 +128,30 @@ body {
   color: rgb(16, 1, 43);
 }
 
+/*Link setting*/
+.container-intro a:link {
+  text-decoration: none;
+  color: green;
+}
+
+.container-intro a:visited {
+  text-decoration: none;
+  color: green;
+}
+
+.container-intro a:hover {
+  text-decoration: underline;
+  background-color: rgb(238, 227, 177);
+  color: red;
+}
+
+.container-intro a:active {
+  text-decoration: underline;
+  color: red;
+}
+
+
+
 /*Setting images*/
 .mainImage {
   width: 100%;
